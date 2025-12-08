@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Установка Windows и настройка ПК в Минске</title>
+  <meta name="description" content="Установка Windows 10/11 и точная настройка ПК в Минске. Работа удаленно, настройка под пользователя, выезд по договорённости. Цены от 40 BYN." />
+  <meta name="keywords" content="установка Windows Минск, настройка ПК Минск, переустановка Windows, мастер по компьютерам Минск" />
+  <meta property="og:title" content="Установка Windows и настройка ПК в Минске" />
+  <meta property="og:description" content="Быстрая установка Windows 10/11, настройка программ и оптимизация системы. Работа удаленно, настройка под пользователя. Выезд по Минску." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/assets/images/hero-image.png" />
+  <link rel="icon" href="/favicon/favicon-32.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{ --accent:#2563eb }
+    html,body{font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial}
+    /* Плавающая кнопка */
+    #floating-btn { position: fixed; bottom: 20px; right: 20px; z-index: 50; }
+  </style>
+
+  <!-- JSON-LD микроданные -->
+  <script type="application/ld+json">
+ {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Установка Windows и настройка ПК",
+  "image": "https://example.com/assets/images/hero-image.png",
+  "@id": "https://example.com/#localbusiness",
+  "url": "https://example.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Минск",
+    "addressCountry": "BY"
+  },
+  "openingHours": "Mo-Fr 18:00-21:00, Sa-Su 10:00-18:00",
+  "priceRange": "40–70 BYN",
+  "service": {
+    "@type": "Service",
+    "serviceType": "Установка и настройка Windows",
+    "name": "Установка Windows и настройка ПК",
+    "description": "Установка Windows 10/11, драйверы, настройка программ и оптимизация системы. Работа удаленно, настройка под пользователя.",
+    "offers": [
+      {"@type": "Offer","name": "Базовый пакет","price": "40","priceCurrency": "BYN"},
+      {"@type": "Offer","name": "Стандартный пакет","price": "55","priceCurrency": "BYN"},
+      {"@type": "Offer","name": "Расширенный пакет","price": "70","priceCurrency": "BYN"}
+    ]
+  }
+}
+  </script>
+</head>
+<body class="bg-gray-900 text-gray-100">
+
+<!-- Header -->
+<header class="bg-gray-800/80 backdrop-blur sticky top-0 z-50 border-b border-gray-700">
+  <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-4">
+      <div class="w-10 h-10 bg-[color:var(--accent)] rounded-full flex items-center justify-center shadow">
+        <span class="text-xl">💻</span>
+      </div>
+      <div>
+        <div class="text-lg font-semibold">Установка Windows и настройка ПК</div>
+        <div class="text-sm text-gray-400">Минск · Работа удаленно · Выезд по договорённости</div>
+      </div>
+    </div>
+
+    <nav class="hidden md:flex items-center gap-3">
+      <a href="#packages" class="text-sm text-gray-300 hover:text-white">Услуги</a>
+      <a href="#how" class="text-sm text-gray-300 hover:text-white">Как это работает</a>
+      <a href="#contact" class="text-sm px-4 py-2 bg-[color:var(--accent)] rounded-md text-white">Написать</a>
+    </nav>
+
+    <div class="md:hidden">
+      <button id="menu-btn" aria-label="Открыть меню" class="text-gray-300 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobile-menu" class="hidden bg-gray-800 border-t border-gray-700 md:hidden">
+    <a href="#packages" class="block px-4 py-2 text-gray-300 hover:text-white">Услуги</a>
+    <a href="#how" class="block px-4 py-2 text-gray-300 hover:text-white">Как это работает</a>
+    <a href="#contact" class="block px-4 py-2 text-white bg-[color:var(--accent)] mt-1 rounded-md text-center">Написать</a>
+  </div>
+
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+  </script>
+</header>
+
+<!-- Hero -->
+<section class="bg-gradient-to-r from-[#0f172a] to-[#0b1220] py-16">
+  <div class="max-w-5xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <div>
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">Установка Windows и настройка ПК в Минске</h1>
+      <p class="mt-4 text-gray-300 text-lg">Быстрая установка Windows 10/11, точная настройка программ и оптимизация системы. Работа удаленно — удобно и безопасно.</p>
+
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a href="https://t.me/yourusername" target="_blank" class="inline-flex items-center gap-3 px-5 py-3 bg-[color:var(--accent)] rounded-lg text-white font-semibold" aria-label="Написать в Telegram">Написать в Telegram</a>
+        <a href="#" class="inline-flex items-center gap-3 px-5 py-3 bg-[#6b21a8] rounded-lg text-white font-semibold" aria-label="Написать в Viber">Написать в Viber</a>
+        <a href="#packages" class="inline-flex items-center gap-3 px-5 py-3 border border-gray-700 rounded-lg text-gray-200">Посмотреть пакеты</a>
+      </div>
+
+      <ul class="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm text-gray-300">
+        <li class="flex items-start gap-2"><svg class="w-5 h-5 text-[color:var(--accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4"></path></svg> Работа удаленно</li>
+        <li class="flex items-start gap-2"><svg class="w-5 h-5 text-[color:var(--accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h18M3 12h18M3 17h18"></path></svg> Настройка под пользователя</li>
+        <li class="flex items-start gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[color:var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <circle cx="12" cy="12" r="10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <line x1="12" y1="12" x2="12" y2="8" stroke-width="2" stroke-linecap="round"/>
+            <line x1="12" y1="12" x2="15" y2="12" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        Быстро и аккуратно
+        </li>
+      </ul>
+    </div>
+
+    <div class="relative">
+      <div class="w-full h-64 md:h-80 rounded-xl overflow-hidden bg-gradient-to-tr from-gray-800 to-gray-700 flex items-center justify-center">
+        <img src="/assets/images/hero-image.png" loading="lazy" class="object-cover w-full h-full opacity-95" />
+      </div>
+      <div class="absolute -bottom-6 right-6 bg-[#0b1220] p-4 rounded-xl border border-gray-700 shadow-lg">
+        <div class="text-sm text-gray-300">От 40 BYN — базовая установка</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Packages -->
+<section id="packages" class="max-w-5xl mx-auto px-4 py-12">
+  <h2 class="text-2xl font-bold text-white mb-6">Пакеты услуг</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <article class="bg-gray-800 border border-gray-700 rounded-2xl p-6">
+      <h3 class="text-xl font-semibold text-white">Базовый</h3>
+      <div class="mt-2 text-[color:var(--accent)] font-bold text-2xl">40 BYN</div>
+      <ul class="mt-4 list-disc ml-5 text-gray-300 space-y-1">
+        <li>Установка Windows 10/11</li>
+        <li>Драйверы и обновления</li>
+        <li>Стандартные настройки</li>
+        <li>ПК готов к базовой работе</li>
+      </ul>
+      <div class="mt-6">
+        <a href="https://t.me/yourusername" class="inline-block px-4 py-2 bg-[color:var(--accent)] rounded-md text-white">Выбрать</a>
+      </div>
+    </article>
+
+    <article class="bg-gray-800 border border-gray-700 rounded-2xl p-6">
+      <h3 class="text-xl font-semibold text-white">Стандарт</h3>
+      <div class="mt-2 text-[color:var(--accent)] font-bold text-2xl">55 BYN</div>
+      <ul class="mt-4 list-disc ml-5 text-gray-300 space-y-1">
+        <li>Всё из Базового</li>
+        <li>Установка набора программ (браузеры, офис, мессенджеры)</li>
+        <li>Оптимизация автозагрузки</li>
+        <li>Проверка интернета, звука, периферии</li>
+      </ul>
+      <div class="mt-6">
+        <a href="https://t.me/yourusername" class="inline-block px-4 py-2 bg-[color:var(--accent)] rounded-md text-white">Выбрать</a>
+      </div>
+    </article>
+
+    <article class="bg-gray-800 border border-gray-700 rounded-2xl p-6">
+      <h3 class="text-xl font-semibold text-white">Расширенный</h3>
+      <div class="mt-2 text-[color:var(--accent)] font-bold text-2xl">70 BYN</div>
+      <ul class="mt-4 list-disc ml-5 text-gray-300 space-y-1">
+        <li>Всё из Стандарта</li>
+        <li>Сохранение данных</li>
+        <li>Настройка антивируса</li>
+        <li>Диагностика и исправление сбоев</li>
+      </ul>
+      <div class="mt-6">
+        <a href="https://t.me/yourusername" class="inline-block px-4 py-2 bg-[color:var(--accent)] rounded-md text-white">Выбрать</a>
+      </div>
+    </article>
+  </div>
+
+  <p class="mt-6 text-sm text-gray-400">Цены ориентировочные. Точная стоимость — в переписке после уточнения задачи.</p>
+</section>
+
+<!-- Services -->
+<section class="max-w-5xl mx-auto px-4 py-12">
+  <h2 class="text-2xl font-bold text-white mb-4">Отдельные услуги</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-300">
+    <div class="bg-gray-800 rounded-xl p-4 border border-gray-700">Установка отдельных программ — 5–15 BYN</div>
+    <div class="bg-gray-800 rounded-xl p-4 border border-gray-700">Удаление вирусов / рекламы — 15–30 BYN</div>
+    <div class="bg-gray-800 rounded-xl p-4 border border-gray-700">Ускорение ПК — 20–35 BYN</div>
+    <div class="bg-gray-800 rounded-xl p-4 border border-gray-700">Восстановление загрузки Windows — 20–40 BYN</div>
+  </div>
+</section>
+
+<!-- How it works -->
+<section id="how" class="max-w-5xl mx-auto px-4 py-12">
+  <h2 class="text-2xl font-bold text-white mb-4">Как это работает</h2>
+  <ol class="list-decimal ml-5 text-gray-300 space-y-3">
+    <li>Пишите в мессенджере — указываете пакет или проблему.</li>
+    <li>Уточняю детали и согласовываю удобное время (выезд или удалённо).</li>
+    <li>Выполняю работу: установка, настройка, оптимизация (обычно 1–3 часа).</li>
+    <li>Проверка, краткая инструкция и гарантия на работу.</li>
+  </ol>
+</section>
+<!-- Guarantee -->
+<section id="guarantee" class="max-w-5xl mx-auto px-4 py-12">
+  <h2 class="text-2xl font-bold text-white mb-4">Гарантия</h2>
+  <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 text-gray-300">
+    Предоставляется гарантия 7 дней: если я допустил ошибку при установке или настройке программного обеспечения, исправлю её бесплатно. 
+    Гарантия не распространяется на ошибки клиента или аппаратные неисправности.
+  </div>
+</section>
+<!-- FAQ -->
+<section class="max-w-5xl mx-auto px-4 py-12">
+  <h2 class="text-2xl font-bold text-white mb-4">Частые вопросы</h2>
+  <div class="space-y-4 text-gray-300">
+    <details class="bg-gray-800 rounded-xl p-4 border border-gray-700">
+      <summary class="font-semibold">Сохраняете ли вы мои данные?</summary>
+      <p class="mt-2 text-gray-300">Если нужно — сделаю резервную копию. Если нет места — согласуем перенос данных или вариант сохранения.</p>
+    </details>
+
+    <details class="bg-gray-800 rounded-xl p-4 border border-gray-700">
+      <summary class="font-semibold">Сколько времени занимает установка?</summary>
+      <p class="mt-2 text-gray-300">Обычно 1–3 часа в зависимости от скорости диска и объёма данных.</p>
+    </details>
+
+    <details class="bg-gray-800 rounded-xl p-4 border border-gray-700">
+      <summary class="font-semibold">Делаете ли вы выезд?</summary>
+      <p class="mt-2 text-gray-300">Да, по Минску по договорённости (будние вечера и выходные). Указывайте удобное время в сообщении.</p>
+    </details>
+
+    <details class="bg-gray-800 rounded-xl p-4 border border-gray-700">
+      <summary class="font-semibold">Есть ли гарантия на работу?</summary>
+      <p class="mt-2 text-gray-300">Предоставляется гарантия 7 дней: если я допустил ошибку при установке или настройке программного обеспечения, исправлю её бесплатно. Гарантия не распространяется на ошибки клиента или аппаратные неисправности.</p>
+    </details>
+
+    <details class="bg-gray-800 rounded-xl p-4 border border-gray-700">
+      <summary class="font-semibold">Можно ли выбрать отдельные услуги?</summary>
+      <p class="mt-2 text-gray-300">Да, услуги можно выбрать отдельно — установка программ, удаление вирусов, ускорение ПК и т.д.</p>
+    </details>
+
+    <details class="bg-gray-800 rounded-xl p-4 border border-gray-700">
+      <summary class="font-semibold">Что делать после завершения работы?</summary>
+      <p class="mt-2 text-gray-300">После установки и настройки проверяем работу системы, даю краткую инструкцию и рекомендации.</p>
+    </details>
+
+    <details class="bg-gray-800 rounded-xl p-4 border border-gray-700">
+      <summary class="font-semibold">Какая форма оплаты возможна?</summary>
+      <p class="mt-2 text-gray-300">Оплата наличными или переводом на карту после выполнения работы.</p>
+    </details>
+
+    <details class="bg-gray-800 rounded-xl p-4 border border-gray-700">
+      <summary class="font-semibold">Нужна ли лицензия Windows?</summary>
+      <p class="mt-2 text-gray-300">Можно установить как с официальной лицензией, так и с тестовой версией для дальнейшей активации пользователем.</p>
+    </details>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="max-w-5xl mx-auto px-4 py-12">
+  <h2 class="text-2xl font-bold text-white mb-4">Связь</h2>
+  <p class="text-gray-300 mb-4">Пишите в мессенджерах — это самый удобный способ связи. Отвечаю в рабочие часы.</p>
+
+  <div class="flex flex-col sm:flex-row gap-4">
+    <a href="https://t.me/yourusername" target="_blank" class="flex-1 inline-flex items-center justify-center gap-3 px-4 py-3 bg-[color:var(--accent)] rounded-lg text-white font-semibold" aria-label="Связаться через Telegram">Telegram</a>
+    <a href="#" class="flex-1 inline-flex items-center justify-center gap-3 px-4 py-3 bg-[#6b21a8] rounded-lg text-white font-semibold" aria-label="Связаться через Viber">Viber</a>
+  </div>
+
+  <p class="mt-4 text-sm text-gray-400">Приём заявок: будни 18:00–21:00, сб‑вс 10:00–18:00. Зона: Минск.</p>
+</section>
+
+<!-- Плавающая кнопка -->
+<a id="floating-btn" href="https://t.me/yourusername" class="inline-flex items-center justify-center px-5 py-3 bg-[color:var(--accent)] text-white rounded-full shadow-lg font-semibold" aria-label="Написать в Telegram">Написать</a>
+
+<!-- Footer -->
+<footer class="border-t border-gray-800 mt-12 py-6">
+  <div class="max-w-5xl mx-auto px-4 text-center text-sm text-gray-400">
+    © 2025 Установка Windows и настройка ПК. Все права защищены.
+  </div>
+</footer>
+
+</body>
+</html>
