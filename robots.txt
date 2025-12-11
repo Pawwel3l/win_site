@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://winhelp.by/sitemap.xml
