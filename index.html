@@ -41,7 +41,8 @@
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="assets/images/hero-image.png" as="image" type="image/png">
     <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
-    <meta name="description" content="Установка Windows 11/10/8/7 и настройка ПК. Работа с выездом. Цены от 40 BYN." />
+    <link rel="stylesheet" href="/styles/styles.css">
+    <meta name="description" content="Установка и переустановка Windows 11/10/8/7 в Минске. Настройка, оптимизация, выезд, бесплатная диагностика, гарантия." />
     <meta name="keywords" content="установка Windows Минск, установка виндовс, настройка ПК Минск, переустановка Windows, мастер по компьютерам Минск" />
     <meta property="og:title" content="Установка Windows и настройка ПК в Минске" />
     <meta property="og:description" content="Быстрая установка Windows 11/10/8/7, настройка программ и оптимизация системы. Работа с выездом по Минску" />
@@ -66,23 +67,6 @@
     <meta name="theme-color" content="#0f172a">
     <meta name="msapplication-TileColor" content="#0f172a">
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-         :root {
-            --accent: #2563eb
-        }
-        
-        html,
-        body {
-            font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial
-        }
-        
-        #floating-btn {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 50;
-        }
-    </style>
 
     <!-- JSON-LD микроданные для LocalBusiness -->
     <script type="application/ld+json">
@@ -93,23 +77,13 @@
             "description": "Профессиональная установка Windows 11/10/8/7, настройка программ и оптимизация системы. Работа с выездом по Минску.",
             "image": "https://winhelp.by/assets/images/hero-image.png",
             "url": "https://winhelp.by",
-            "priceRange": "40-70 BYN",
+            "priceRange": "40 BYN",
 
             "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Минск",
                 "addressCountry": "BY"
             },
-
-            "openingHours": [
-                "Mo 00:00-23:59",
-                "Tu 00:00-23:59",
-                "We 00:00-23:59",
-                "Th 00:00-23:59",
-                "Fr 00:00-23:59",
-                "Sa 00:00-23:59",
-                "Su 00:00-23:59"
-            ],
 
             "contactPoint": [{
                 "@type": "ContactPoint",
@@ -133,28 +107,8 @@
             "makesOffer": [{
                 "@type": "Offer",
                 "name": "Базовый пакет установки Windows",
-                "description": "Установка Windows 10/11, драйверы и обновления, стандартные настройки",
+                "description": "Установка Windows 11/10/8/7, драйверов и программ, настройка ПК",
                 "price": "40",
-                "priceCurrency": "BYN",
-                "eligibleRegion": {
-                    "@type": "City",
-                    "name": "Минск"
-                }
-            }, {
-                "@type": "Offer",
-                "name": "Стандартный пакет",
-                "description": "Всё из Базового + установка программ, оптимизация автозагрузки",
-                "price": "55",
-                "priceCurrency": "BYN",
-                "eligibleRegion": {
-                    "@type": "City",
-                    "name": "Минск"
-                }
-            }, {
-                "@type": "Offer",
-                "name": "Расширенный пакет",
-                "description": "Всё из Стандарта + сохранение данных, настройка антивируса, диагностика",
-                "price": "70",
                 "priceCurrency": "BYN",
                 "eligibleRegion": {
                     "@type": "City",
@@ -241,7 +195,7 @@
         <div class="max-w-5xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
                 <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">Установка Windows и настройка ПК в Минске</h1>
-                <p class="mt-4 text-gray-300 text-lg">Быстрая установка Windows 11/10/8/7, точная настройка программ и оптимизация системы. Работа с выездом по Минску</p>
+                <p class="mt-4 text-gray-300 text-lg">Установка и переустановка Windows 11/10/8/7 в Минске. Настройка, оптимизация, выезд, бесплатная диагностика, гарантия.</p>
 
                 <div class="mt-6 flex flex-wrap gap-3">
                     <a href="#packages" class="inline-flex items-center gap-3 px-5 py-3 border border-gray-700 rounded-lg text-gray-200">Посмотреть услуги</a>
@@ -252,6 +206,8 @@
                 <ul class="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm text-gray-300">
                     <li class="flex items-start gap-2"><svg class="w-5 h-5 text-[color:var(--accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4"></path></svg> Работа с выездом</li>
                     <li class="flex items-start gap-2"><svg class="w-5 h-5 text-[color:var(--accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h18M3 12h18M3 17h18"></path></svg> Настройка под пользователя</li>
+                    <li class="flex items-start gap-2"><svg class="w-5 h-5 text-[color:var(--accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h18M3 12h18M3 17h18"></path></svg> Гарантия</li>
+
                     <li class="flex items-start gap-2">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[color:var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <circle cx="12" cy="12" r="10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -267,86 +223,49 @@
                     <img src="assets/images/hero-image.png" class="object-cover w-full h-full opacity-95" alt="Профессиональная установка Windows 11 и настройка ПК в Минске" />
                 </div>
                 <div class="absolute -bottom-6 right-6 bg-[#0b1220] p-4 rounded-xl border border-gray-700 shadow-lg">
-                    <div class="text-sm text-gray-300">От 40 BYN — базовая установка</div>
+                    <div class="text-sm text-gray-300">40 BYN — установка и настройка Windows</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Packages -->
-    <section id="packages" class="max-w-5xl mx-auto px-4 py-12">
-        <h2 class="text-2xl font-bold text-white mb-6">Пакеты услуг</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <!-- Базовый -->
-            <article class="bg-gray-800 border border-gray-700 rounded-2xl p-6">
-                <h3 class="text-xl font-semibold text-white">Базовый</h3>
+<section id="packages" class="w-full bg-gray-900 py-12">
+    <div class="px-4">
+        <h2 class="text-2xl font-bold text-white mb-6 text-center">Услуги</h2>
+        <div class="w-full">
+            <article class="bg-gray-800 border border-gray-700 rounded-2xl p-6 mx-auto max-w-4xl">
+                <h3 class="text-xl font-semibold text-white">Полный пакет</h3>
                 <div class="mt-2 text-[color:var(--accent)] font-bold text-2xl">40 BYN</div>
                 <ul class="mt-4 list-disc ml-5 text-gray-300 space-y-1">
-                    <li>Полная установка Windows</li>
-                    <li>Разметка дисков и корректное создание системных разделов</li>
-                    <li>Установка всех драйверов: видео, звук, сеть, Wi-Fi, чипсет, периферия</li>
-                    <li>Установка важных обновлений Windows</li>
-                    <li>Настройка безопасности и конфиденциальности</li>
-                    <li>Создание пользователя, настройка рабочего стола и меню Пуск</li>
-                    <li>Настройка интернета, сети, звука, Bluetooth и устройств</li>
-                    <li>Включение нужных компонентов, отключение лишних</li>
-                    <li>Первичная оптимизация производительности</li>
-                    <li>ПК полностью готов к работе</li>
+                    <li>Установка и переустановка официальной Windows любой версии </li>
+                    <li>Активация Windows и Microsoft Office(с использованием официальных либо альтернативных ключей)</li>
+                    <li>Настройка операционной системы под пользователя</li>
+                    <li>Установка всех необходимых драйверов и обновлений</li>
+                    <li>Установка любых программ по запросу пользователя</li>
+                    <li>Установка антивируса по выбору или настройка стандартного</li>
+                    <li>Установка защиты от назойливой рекламы</li>
                 </ul>
-                <div class="mt-6">
-                    <a href="#contact" class="inline-block px-4 py-2 bg-[color:var(--accent)] rounded-md text-white text-sm">Выбрать</a>
-                </div>
-            </article>
-
-            <!-- Стандарт -->
-            <article class="bg-gray-800 border border-gray-700 rounded-2xl p-6">
-                <h3 class="text-xl font-semibold text-white">Стандарт</h3>
-                <div class="mt-2 text-[color:var(--accent)] font-bold text-2xl">55 BYN</div>
-                <ul class="mt-4 list-disc ml-5 text-gray-300 space-y-1">
-                    <li>Всё из пакета «Базовый»</li>
-                    <li>Установка популярных программ: браузеры, архиваторы, мессенджеры и тд</li>
-                    <li>Установка любых программ по запросу</li>
-                    <li>Настройка автозагрузки, служб и уведомлений</li>
-                    <li>Настройка конфиденциальности, обновлений и режимов питания</li>
-                    <li>Проверка корректной работы сети, Wi-Fi, звука, Bluetooth, USB, печати</li>
-                    <li>Очистка временных файлов и мусора после установки</li>
-                    <li>Персональная настройка системы под пользователя</li>
-                </ul>
-                <div class="mt-6">
-                    <a href="#contact" class="inline-block px-4 py-2 bg-[color:var(--accent)] rounded-md text-white text-sm">Выбрать</a>
-                </div>
-            </article>
-
-            <!-- Расширенный -->
-            <article class="bg-gray-800 border border-gray-700 rounded-2xl p-6">
-                <h3 class="text-xl font-semibold text-white">Расширенный</h3>
-                <div class="mt-2 text-[color:var(--accent)] font-bold text-2xl">70 BYN</div>
-                <ul class="mt-4 list-disc ml-5 text-gray-300 space-y-1">
-                    <li>Всё из пакета «Стандарт»</li>
-                    <li>Перенос пользовательских данных: документы, фото, рабочие файлы</li>
-                    <li>Перенос закладок и браузерных профилей (если возможно)</li>
-                    <li>Установка и настройка антивируса или встроенной защиты</li>
-                    <li>Установка и активация Microsoft Office</li>
-                    <li>Диагностика системы: проверка дисков, SMART, поиск ошибок</li>
-                    <li>Исправление системных сбоев и ошибок Windows</li>
-                    <li>Глубокая оптимизация: автозагрузка, службы, очистка компонентов</li>
-                    <li>Проверка производительности и устранение мелких неполадок</li>
-                </ul>
-                <div class="mt-6">
+                <div class="mt-6 text-center">
                     <a href="#contact" class="inline-block px-4 py-2 bg-[color:var(--accent)] rounded-md text-white text-sm">Выбрать</a>
                 </div>
             </article>
         </div>
-        <p class="mt-6 text-sm text-gray-400">Цены ориентировочные. Точная стоимость — в переписке после уточнения задачи.</p>
-    </section>
+        <p class="mt-6 text-sm text-gray-400 text-center">Точная стоимость — в переписке после уточнения задачи.</p>
+    </div>
+</section>
 
     <!-- Services -->
     <section class="max-w-5xl mx-auto px-4 py-12">
-        <h2 class="text-2xl font-bold text-white mb-4">Отдельные услуги</h2>
+        <h2 class="text-2xl font-bold text-white mb-4">Дополнительные услуги</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-300">
-            <div class="bg-gray-800 rounded-xl p-4 border border-gray-700">Установка отдельных программ — 5–15 BYN</div>
-            <div class="bg-gray-800 rounded-xl p-4 border border-gray-700">Удаление вирусов / рекламы / троянов — 15–30 BYN</div>
-            <div class="bg-gray-800 rounded-xl p-4 border border-gray-700">Восстановление работы Windows — 20–40 BYN</div>
+             <div class="bg-gray-800 rounded-xl p-4 border border-gray-700">Удаление вирусов, баннеров, троянов, шифровальщиков</div>
+             <div class="bg-gray-800 rounded-xl p-4 border border-gray-700">Восстановление данных с жёстких дисков, флешек (при возможности)</div>
+             <div class="bg-gray-800 rounded-xl p-4 border border-gray-700">Оптимизация системы (ускорение работы)</div>
+             <div class="bg-gray-800 rounded-xl p-4 border border-gray-700">Подключение и настройка Wi-Fi роутеров, модемов</div>
+             <div class="bg-gray-800 rounded-xl p-4 border border-gray-700">Подключение принтеров и другого периферийного оборудования</div>
+             <div class="bg-gray-800 rounded-xl p-4 border border-gray-700">Восстановление паролей Windоws</div>
+
         </div>
     </section>
 
@@ -354,17 +273,18 @@
     <section id="how" class="max-w-5xl mx-auto px-4 py-12">
         <h2 class="text-2xl font-bold text-white mb-4">Как это работает</h2>
         <ol class="list-decimal ml-5 text-gray-300 space-y-3">
-            <li>Пишите в мессенджере — указывайте пакет или проблему.</li>
+            <li>Вы описываете проблему в сообщении</li>
             <li>Обсудим детали и согласуем удобное время (выезд или удалённо).</li>
             <li>Выполнение работы: установка, настройка, оптимизация (обычно 1–2 часа).</li>
             <li>Проверка, краткая инструкция и гарантия на работу.</li>
+            <li>Оплата по факту</li>
         </ol>
     </section>
     <!-- Guarantee -->
     <section id="guarantee" class="max-w-5xl mx-auto px-4 py-12">
         <h2 class="text-2xl font-bold text-white mb-4">Гарантия</h2>
         <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 text-gray-300">
-            Предоставляется гарантия 7 дней: если я допустил ошибку при установке или настройке, исправлю её бесплатно. Гарантия не распространяется на ошибки клиента или аппаратные неисправности.
+            Предоставляется гарантия 10 дней: если я допустил ошибку при установке или настройке, исправлю её бесплатно. Гарантия не распространяется на ошибки клиента или аппаратные неисправности.
         </div>
     </section>
     <!-- FAQ -->
@@ -388,7 +308,7 @@
 
             <details class="bg-gray-800 rounded-xl p-4 border border-gray-700">
                 <summary class="font-semibold">Есть ли гарантия на работу?</summary>
-                <p class="mt-2 text-gray-300">Предоставляется гарантия 7 дней: если я допустил ошибку при установке или настройке программного обеспечения, исправлю её бесплатно. Гарантия не распространяется на ошибки клиента или аппаратные неисправности.</p>
+                <p class="mt-2 text-gray-300">Предоставляется гарантия 10 дней: если я допустил ошибку при установке или настройке программного обеспечения, исправлю её бесплатно. Гарантия не распространяется на ошибки клиента или аппаратные неисправности.</p>
             </details>
             <details class="bg-gray-800 rounded-xl p-4 border border-gray-700">
                 <summary class="font-semibold">Какая форма оплаты возможна?</summary>
