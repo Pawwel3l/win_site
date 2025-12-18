@@ -1,0 +1,16 @@
+:root {
+  --accent: #2563eb;
+}
+
+html,
+body {
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI',
+               Roboto, 'Helvetica Neue', Arial;
+}
+
+#floating-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 50;
+}
